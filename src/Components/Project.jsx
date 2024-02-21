@@ -56,11 +56,11 @@ const Project = () => {
         <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
       </div>
       <br />
-      <div className="flex md:flex-col-3 flex-col-1 mx-auto items-center relative">
+      <div className="flex md:flex-col-3  mx-auto items-center relative ">
         <Swiper
           breakpoints={{
             340: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 15,
             },
             700: {
@@ -70,14 +70,15 @@ const Project = () => {
           }}
           freeMode={true}
           pagination={{
-            clickable: true,
+            clickable: true,            
+           
           }}
           modules={[FreeMode, Pagination]}
-          className="max-w-[100%] lg:max-w-[80%]"
+          className="max-w-[100%] lg:max-w-[80%] "
         >
           {ProjectList.map((item, i) => (
             <SwiperSlide key={i}>
-              <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
+              <div className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10 ">
                 <img src={item.image} alt="" className="rounded-lg" />
                 <h3 className="text-xl my-4">{item.title}</h3>
                 <h3 className="text-lg my-4">{item.discription}</h3>
