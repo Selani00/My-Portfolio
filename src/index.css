@@ -13,3 +13,14 @@ body{
 .btn-primary{
   @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
 }
+
+input,textarea{
+  @apply bg-gray-700 outline-none rounded-lg p-3;
+}
+::placeholder{
+  @apply text-lg;
+}
+
+::selection{
+  @apply bg-cyan-600;
+}

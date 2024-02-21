@@ -58,7 +58,7 @@ const NavBar = () => {
         >
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {menuLinks?.map((menuLink, index) => (
-              <li key={index} className="px-6 hover:text-yellow ">
+              <li onClick={()=>setIsMenuToggled(false)} key={index} className="px-6 hover:text-yellow ">
                 <a href={menuLink?.link}>{menuLink?.name}</a>
               </li>
             ))}
