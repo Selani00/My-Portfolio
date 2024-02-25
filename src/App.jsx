@@ -3,7 +3,7 @@ import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Project";
-import Tec from "./Components/Tec";
+
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/NavBar";
@@ -17,7 +17,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Tec/>
+      
       <Projects />
       <Contact />
       <Footer />
