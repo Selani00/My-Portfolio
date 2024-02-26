@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { BiSolidMessageRoundedDetail } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiWhatsappFill } from "react-icons/ri";
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   const contact_info = [
     {
       logo: <BiSolidMessageRoundedDetail className="w-8 h-8" />,
@@ -28,7 +49,7 @@ const Contact = () => {
       </div>
       
 
-      <div className="mt-16 flex md:flex-row flex-col gap-6 md:p-6 p-2 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto">
+      <div className="mt-16 flex md:flex-row flex-col gap-6 md:p-6 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto">
         <form className="flex flex-col flex-1 gap-5">
           <input type="text" placeholder="Your name"></input>
           <input type="Email" placeholder="Your email Address"></input>
