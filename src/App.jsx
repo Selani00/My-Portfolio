@@ -16,8 +16,7 @@ function App() {
       <Bot/>
       <Hero />
       <About />
-      <Skills />
-      
+      <Skills />   
       <Projects />
       <Contact />
       <Footer />
