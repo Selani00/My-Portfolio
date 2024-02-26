@@ -12,8 +12,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm('service_fpq3fxi', 'template_utt58ni', form.current, {
+        publicKey: 'SWWu3tOpP7CkfJisF',
       })
       .then(
         () => {
@@ -50,11 +50,11 @@ const Contact = () => {
       
 
       <div className="mt-16 flex md:flex-row flex-col gap-6 md:p-6 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto">
-        <form className="flex flex-col flex-1 gap-5">
-          <input type="text" placeholder="Your name"></input>
-          <input type="Email" placeholder="Your email Address"></input>
-          <textarea placeholder="Your Message" rows={10}></textarea>
-          <button className="btn-primary w-fit">Send Message</button>
+        <form className="flex flex-col flex-1 gap-5" ref={form} onSubmit={sendEmail}>
+          <input type="text" placeholder="Your name" name="user_name"></input>
+          <input type="Email" placeholder="Your email Address" name="user_email"></input>
+          <textarea placeholder="Your Message" rows={10} name="message"></textarea>
+          <button className="btn-primary w-fit" type="submit" value="Send">Send Message</button>
         </form>
         <div className="flex flex-col gap-7">
 
