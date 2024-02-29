@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/NavBar";
 import Bot from "./Components/Bot";
+import Certificate from "./Components/Certificates";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Skills />   
       <Projects />
+      <Certificate />
       <Contact />
       <Footer />
     </div>

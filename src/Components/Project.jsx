@@ -1,9 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
+import Alison from "../assets/Project_images/Alison.png";
+import DocMs from "../assets/Project_images/DocMS.png";
+import mobile from "../assets/Project_images/Mobile.png";
+import PRS from "../assets/Project_images/PRS.png";
+import Spam from "../assets/Project_images/Spam.png";
 
-import project1 from "../assets/project-1.png";
-import project2 from "../assets/project-2.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,37 +15,44 @@ import "swiper/css/pagination";
 const Project = () => {
   const ProjectList = [
     {
-      title: "Movie App",
-      discription: "A movie app built using react and tailwindcss",
-      image: project1,
+      title: "Portfolio Website",
+      discription: "My Portfolio Website using React and Tailwind CSS",
+      image: Spam,
+      gitLink: "https://github.com/Selani00/My-Portfolio",
+      demo: "https://email-spam-detector-jyr7.onrender.com/",
+    },
+    {
+      title: "Spam Email Detecter",
+      discription: "Web Application using Flask and Machine Learning",
+      image: Spam,
+      gitLink: "https://github.com/Selani00/Spam-Email-Detection-ML",
+      demo: "https://email-spam-detector-jyr7.onrender.com/",
+    },
+    {
+      title: "Travel Companion",
+      discription: "Mobile Application using Flutter and Firebase",
+      image: mobile,
+      gitLink: "https://github.com/",
+      demo: "https://github.com/Selani00/Travel_Companion_s",
+    },
+    {
+      title: "Document Management System",
+      discription: "Web Application using ASP.Net and SQL Server",
+      image: DocMs,
       gitLink: "https://github.com/",
       demo: "https://github.com/",
     },
     {
-      title: "Movie App",
-      discription: "A movie app built using react and tailwindcss",
-      image: project2,
+      title: "Patient Registration System",
+      discription: "Desktop Application using WPF and Sqlite",
+      image: PRS,
       gitLink: "https://github.com/",
       demo: "https://github.com/",
     },
     {
-      title: "Movie App",
-      discription: "A movie app built using react and tailwindcss",
-      image: project1,
-      gitLink: "https://github.com/",
-      demo: "https://github.com/",
-    },
-    {
-      title: "Movie App",
-      discription: "A movie app built using react and tailwindcss",
-      image: project1,
-      gitLink: "https://github.com/",
-      demo: "https://github.com/",
-    },
-    {
-      title: "Movie App",
-      discription: "A movie app built using react and tailwindcss",
-      image: project1,
+      title: "Resturant Website",
+      discription: "WebApplication using HTML and CSS",
+      image: Alison,
       gitLink: "https://github.com/",
       demo: "https://github.com/",
     },
@@ -53,7 +63,7 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        <p className="text-gray-200 mt-3 text-xl tracking-wide font-bold mb-7">My awesome works</p>
       </div>
       <br />
       <div className="flex md:flex-col-3  mx-auto items-center relative ">
@@ -79,9 +89,9 @@ const Project = () => {
           {ProjectList.map((item, i) => (
             <SwiperSlide key={i}>
               <div className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10 ">
-                <img src={item.image} alt="" className="rounded-lg" />
-                <h3 className="text-xl my-4">{item.title}</h3>
-                <h3 className="text-lg my-4">{item.discription}</h3>
+                <img src={item.image} alt="" className="rounded-lg w-full h-40 object-cover" />
+                <h3 className="text-xl my-4 font-bold">{item.title}</h3>
+                <h3 className="text-base my-4">{item.discription}</h3>
                 <div className="flex gap-3">
                   <a
                     href={item.gitLink}

@@ -96,31 +96,9 @@ const Skills = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">Languages</p>
+        <p className="text-gray-200 mt-3 text-xl tracking-wide font-bold mb-7">Languages</p>
 
-        {/* <div
-          className="flex items-center justify-center
-     mt-12 gap-10 flex-wrap"
-        >
-          {Languages?.map((skills, i) => (
-            <div
-              key={i}
-              className="border-2 border-cyan-600 group relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl "
-            >
-              <div
-                style={{
-                  background: `conic-gradient(rgb(8,154,170) ${skills.cont}%,#ddd ${skills.cont}%)`,
-                }}
-                className="w-16 h-16 flex items-center justify-center rounded-full"
-              >
-                <div className="text-6xl w-14 h-14 bg-gray-900 rounded-full flex group-hover:text-cyan-600 items-center justify-center">
-                  {skills.logo}
-                </div>
-              </div>
-              <p className="text-xl mt-3">{skills.level}</p>
-            </div>
-          ))}
-        </div> */}
+        
         <div className="flex items-center justify-center mt-12 gap-10 md:gap-20 flex-wrap mx-10">
           {Languages_icon?.map((Languages, i) => (
             <div>
@@ -134,7 +112,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <p className="text-gray-400 mt-5 text-lg">Framworks</p>
+        <p className="text-gray-200 mt-3 text-xl tracking-wide font-bold mb-7">Framworks</p>
 
         <div className="flex items-center justify-center mt-12  gap-10 md:gap-20 flex-wrap">
           {Framwork_Icon?.map((Framworks, i) => (

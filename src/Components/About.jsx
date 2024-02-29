@@ -15,7 +15,7 @@ const About = () => {
           About <span className="text-cyan-600">Me</span>
         </h3>
 
-        <p className="text-gray-400 my-3 text-lg">My introduction</p>
+        <p className="text-gray-200 my-3 text-xl tracking-wide font-bold mb-10">My introduction</p>
         <div className=" flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="flex-1  flex justify-center items-center">
             <div className="lg:w-96 h-full relative sm:w-10/11 w-11/12 max-w-sm">
@@ -50,12 +50,12 @@ const About = () => {
           </div>
         </div>
 
-        <p className="text-gray-400 my-3 text-lg">My Educations</p>
+        <p className="text-gray-200 my-3 text-xl tracking-wide font-bold">My Educations</p>
         <div className="flex flex-col justify-center sm:py-12">
           <div className="w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0">
             <div className="relative text-gray-700 antialiased text-sm font-semibold">
               {/* Middle line */}
-              <div className="hidden absolute w-1 sm:block bg-indigo-300 h-full left-1/2 transform -translate-x-1/2"></div>
+              <div className="hidden absolute w-1 sm:block bg-white h-full left-1/2 transform -translate-x-1/2"></div>
               {/* left cards */}
 
               <div className="mt-6 sm:mt-0 sm:md-12">
