@@ -6,16 +6,17 @@ import UOR from "../assets/Educations/UOR.png";
 import IHRA from "../assets/Educations/IHRA.png";
 import Devi from "../assets/Educations/Devi.png";
 import DVP from "../assets/Educations/DVP.png";
+// import { Carousel } from 'flowbite-react';
 
 const About = () => {
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="md:text-4xl text-3xl font-semibold">
           About <span className="text-cyan-600">Me</span>
         </h3>
 
-        <p className="text-gray-200 my-3 text-xl tracking-wide font-bold mb-10">My introduction</p>
+        <p className="text-gray-200 my-3 md:text-xl text-base tracking-wide font-bold mb-10">My introduction</p>
         <div className=" flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="flex-1  flex justify-center items-center">
             <div className="lg:w-96 h-full relative sm:w-10/11 w-11/12 max-w-sm">
@@ -50,7 +51,7 @@ const About = () => {
           </div>
         </div>
 
-        <p className="text-gray-200 my-3 text-xl tracking-wide font-bold">My Educations</p>
+        <p className="text-gray-200 md:mt-3 mt-10  md:text-xl text-base tracking-wide font-bold" >My Educations</p>
         <div className="flex flex-col justify-center sm:py-12">
           <div className="w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0">
             <div className="relative text-gray-700 antialiased text-sm font-semibold">

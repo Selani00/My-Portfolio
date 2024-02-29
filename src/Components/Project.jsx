@@ -60,10 +60,10 @@ const Project = () => {
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="md:text-4xl text-3xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-200 mt-3 text-xl tracking-wide font-bold mb-7">My awesome works</p>
+        <p className="text-gray-200 mt-3 md:text-xl text-base tracking-wide font-bold mb-7">My awesome works</p>
       </div>
       <br />
       <div className="flex md:flex-col-3  mx-auto items-center relative ">
