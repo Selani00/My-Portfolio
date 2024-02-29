@@ -17,6 +17,7 @@ export default {
       },
       fontFamily:{
         Poppins :"Poppins",
+        Pacifico:["Pacifico", "cursive"]
       }
     },
   },

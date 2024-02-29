@@ -1,8 +1,9 @@
 import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import Profile from "../assets/profile-image.png"
+import Profile from "../assets/profile-image.png";
 import SociaMediaIcons from "../Items/SocialMediaIcons";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -17,13 +18,13 @@ const Hero = ({ setSelectedPage }) => {
         {isAboveMediumScreens ? (
           // This style will create a frame behind the profile
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px]
+            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:rounded-t-[400px] before:w-full before:max-w-[400px]
                 before:h-full before:border-2 before:border-gray-200 before:z-[-1]"
           >
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
-              src={Profile}              
+              src={Profile}
             />
           </div>
         ) : (
@@ -32,13 +33,12 @@ const Hero = ({ setSelectedPage }) => {
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px]"
             src={Profile}
-            />
-          
+          />
         )}
       </div>
 
       {/* Main section     */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-2/5 mt-12 md:mt-32 ">
         {/* Heading */}
         <motion.div
           initial="hidden"
@@ -50,27 +50,25 @@ const Hero = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <h1 className="md:text-5xl text-2xl z-10 text-center md:text-left font-bold">
-          Hello! <br />
-
-          I'm {""}
-            <span
-              className="xs:relative text-red xs:font-semibold z-20"
-            >
-               Selani Didulani
-            </span>         
-            
+          <h1 className="md:text-4xl text-2xl z-10 text-center md:text-left font-semibold">
+            Hi, It's me <br />
           </h1>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
-            quisquam tempora consequuntur repellat ut aliquid sit possimus
-            magnam dolor quae. Commodi eaque nam eius hic optio. Eaque unde
-            corrupti voluptas.
+          <h1 className="md:text-5xl text-4xl font-bold ">
+            Selani {""}
+            <span className="xs:relative text-red  xs:font-semibold z-20">
+              Didulani
+            </span>
+          </h1>
+
+          <p className="mt-10 mb-7 md:text-base text-sm text-center md:text-start">
+            I'm Computer Engineering undergraduate who is interested in
+            front-end development, mobile app development, and UI/UX design.
           </p>
+
+          <a href="#contact">
+            <button className=" text-lg font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center gap-2 transition-all duration-300 bg-red hover:-translate-y-2 mt-10 ">Contact me</button>
+          </a>
         </motion.div>
-
-        
-
 
         <motion.div
           className="flex mt-3 justify-center md:justify-start"
@@ -83,7 +81,7 @@ const Hero = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <SociaMediaIcons/>
+          <SociaMediaIcons />
         </motion.div>
       </div>
     </section>

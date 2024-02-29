@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +15,7 @@ body{
 }
 
 .btn-primary{
-  @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+  @apply bg-cyan-600 font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center text-lg gap-2;
 }
 
 input,textarea{
