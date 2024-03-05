@@ -9,6 +9,8 @@ import DVP from "../assets/Educations/DVP.png";
 // import { Carousel } from 'flowbite-react';
 
 const About = () => {
+
+
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
@@ -18,11 +20,11 @@ const About = () => {
 
         <p className="text-gray-200 my-3 md:text-xl text-base tracking-wide font-bold mb-10">My introduction</p>
         <div className=" flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
-          <div className="flex-1  flex justify-center items-center">
+          {/* <div className="flex-1  flex justify-center items-center">
             <div className="lg:w-96 h-full relative sm:w-10/11 w-11/12 max-w-sm">
               <img src={about} alt="" className="w-full rounded-lg" />
             </div>
-          </div>
+          </div> */}
 
           <div className="p-2">
             <div className="text-gray-300 my-3">
@@ -56,7 +58,9 @@ const About = () => {
           <div className="w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0">
             <div className="relative text-gray-700 antialiased text-sm font-semibold">
               {/* Middle line */}
+              <motion.div>
               <div className="hidden absolute w-1 sm:block bg-white h-full left-1/2 transform -translate-x-1/2"></div>
+              </motion.div>
               {/* left cards */}
 
               <div className="mt-6 sm:mt-0 sm:md-12">
@@ -68,6 +72,7 @@ const About = () => {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.8 }}
+                        
                         variants={{
                           hidden: { opacity: 0, x: 50 },
                           visible: { opacity: 1, x: 0 },
@@ -226,6 +231,8 @@ const About = () => {
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
   );

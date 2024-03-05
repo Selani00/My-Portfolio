@@ -24,7 +24,7 @@ const Hero = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px] rounded-t-[400px]"
+              className="hover:filter transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px] rounded-t-[400px]"
               src={Profile}
             />
           </div>
@@ -39,7 +39,7 @@ const Hero = ({ setSelectedPage }) => {
       </div>
 
       {/* Main section     */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32 ">
+      <div className="z-30 basis-2/5 mt-12 md:mt-32">
         {/* Heading */}
         <motion.div
           initial="hidden"

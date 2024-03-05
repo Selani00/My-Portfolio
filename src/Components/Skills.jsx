@@ -37,54 +37,54 @@ const Skills = () => {
 
   const Languages_icon = [
     {
-      logo: "src/assets/Languages_icons/c-.png",
+      logo: "./src/assets/Languages_icons/c-.png",
       name: "C++",
     },
     {
-      logo: "src/assets/Languages_icons/java.png",
+      logo: "./src/assets/Languages_icons/java.png",
       name: "Java",
     },
     {
-      logo: "src/assets/Languages_icons/js.png",
+      logo: "./src/assets/Languages_icons/js.png",
       name: "JavaScript",
     },
     {
-      logo: "src/assets/Languages_icons/c-sharp.png",
+      logo: "./src/assets/Languages_icons/c-sharp.png",
       name: "C#",
     },
     {
-      logo: "src/assets/Languages_icons/python.png",
+      logo: "./src/assets/Languages_icons/python.png",
       name: "python",
     },
     {
-      logo: "src/assets/Languages_icons/html-5.png",
+      logo: "./src/assets/Languages_icons/html-5.png",
       name: "HTML",
     },
     {
-      logo: "src/assets/Languages_icons/css-3.png",
+      logo: "./src/assets/Languages_icons/css-3.png",
       name: "CSS",
     },
   ];
 
   const Framwork_Icon = [
     {
-      logo: "src/assets/Languages_icons/React.png",
+      logo: "./src/assets/Languages_icons/React.png",
       name: "React",
     },
     {
-      logo: "src/assets/Languages_icons/www.png",
+      logo: "./src/assets/Languages_icons/www.png",
       name: "ASP.NET",
     },
     {
-      logo: "src/assets/Languages_icons/TailwindCSS.png",
+      logo: "./src/assets/Languages_icons/TailwindCSS.png",
       name: "Tailwind CSS",
     },
     {
-      logo: "src/assets/Languages_icons/firebase.png",
+      logo: "./src/assets/Languages_icons/firebase.png",
       name: "Firebase",
     },
     {
-      logo: "src/assets/Languages_icons/flutter.png",
+      logo: "./src/assets/Languages_icons/flutter.png",
       name: "Flutter",
     },
     
