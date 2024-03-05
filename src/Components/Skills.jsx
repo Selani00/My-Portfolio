@@ -1,5 +1,13 @@
 import React from "react";
 
+import c from "../assets/Languages_icons/c-.png"
+import java from "../assets/Languages_icons/java.png"
+import javascript from "../assets/Languages_icons/js.png"
+import cc from "../assets/Languages_icons/c-sharp.png"
+import python from "../assets/Languages_icons/python.png"
+import HTML from "../assets/Languages_icons/html-5.png"
+import CSS from "../assets/Languages_icons/css-3.png"
+
 import react from "../assets/Languages_icons/React.png";
 import asp from "../assets/Languages_icons/www.png";
 import tailwind from "../assets/Languages_icons/TailwindCSS.png";
@@ -37,54 +45,47 @@ const Skills = () => {
 
   const Languages_icon = [
     {
-      logo: "./src/assets/Languages_icons/c-.png",
+      logo: c,
       name: "C++",
     },
     {
-      logo: "./src/assets/Languages_icons/java.png",
+      logo: java,
       name: "Java",
     },
     {
-      logo: "./src/assets/Languages_icons/js.png",
+      logo: javascript,
       name: "JavaScript",
     },
     {
-      logo: "./src/assets/Languages_icons/c-sharp.png",
+      logo: cc,
       name: "C#",
     },
     {
-      logo: "./src/assets/Languages_icons/python.png",
+      logo: python,
       name: "python",
     },
-    {
-      logo: "./src/assets/Languages_icons/html-5.png",
-      name: "HTML",
-    },
-    {
-      logo: "./src/assets/Languages_icons/css-3.png",
-      name: "CSS",
-    },
+
   ];
 
   const Framwork_Icon = [
     {
-      logo: "./src/assets/Languages_icons/React.png",
+      logo: react,
       name: "React",
     },
     {
-      logo: "./src/assets/Languages_icons/www.png",
+      logo: asp,
       name: "ASP.NET",
     },
     {
-      logo: "./src/assets/Languages_icons/TailwindCSS.png",
+      logo: tailwind,
       name: "Tailwind CSS",
     },
     {
-      logo: "./src/assets/Languages_icons/firebase.png",
+      logo: firebase,
       name: "Firebase",
     },
     {
-      logo: "./src/assets/Languages_icons/flutter.png",
+      logo: flutter,
       name: "Flutter",
     },
     
