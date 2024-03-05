@@ -1,9 +1,10 @@
 import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import Profile from "../assets/profile-image.png";
+import Profile from "../assets/Profile_1.png";
+
 import SociaMediaIcons from "../Items/SocialMediaIcons";
-import { TypeAnimation } from "react-type-animation";
+
 
 const Hero = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -23,7 +24,7 @@ const Hero = ({ setSelectedPage }) => {
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px] rounded-t-[400px]"
               src={Profile}
             />
           </div>
@@ -31,7 +32,7 @@ const Hero = ({ setSelectedPage }) => {
           //for the small size screen
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-t-[400px]"
             src={Profile}
           />
         )}
@@ -53,7 +54,7 @@ const Hero = ({ setSelectedPage }) => {
           <h1 className="md:text-4xl text-2xl z-10 text-center md:text-left font-semibold">
             Hi, It's me <br />
           </h1>
-          <h1 className="md:text-5xl text-4xl font-bold ">
+          <h1 className="md:text-5xl text-4xl font-bold text-center sm:text-start">
             Selani {""}
             <span className="xs:relative text-red  xs:font-semibold z-20">
               Didulani

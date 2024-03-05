@@ -6,7 +6,7 @@ import DocMs from "../assets/Project_images/DocMS.png";
 import mobile from "../assets/Project_images/Mobile.png";
 import PRS from "../assets/Project_images/PRS.png";
 import Spam from "../assets/Project_images/Spam.png";
-
+import Portfolio from "../assets/Project_images/Portfolio.png"
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,19 +15,20 @@ import "swiper/css/pagination";
 const Project = () => {
   const ProjectList = [
     {
-      title: "Portfolio Website",
-      discription: "My Portfolio Website using React and Tailwind CSS",
-      image: Spam,
-      gitLink: "https://github.com/Selani00/My-Portfolio",
-      demo: "https://email-spam-detector-jyr7.onrender.com/",
-    },
-    {
       title: "Spam Email Detecter",
       discription: "Web Application using Flask and Machine Learning",
       image: Spam,
       gitLink: "https://github.com/Selani00/Spam-Email-Detection-ML",
       demo: "https://email-spam-detector-jyr7.onrender.com/",
     },
+    {
+      title: "Portfolio Website",
+      discription: "My Portfolio Website using React and Tailwind CSS",
+      image: Portfolio,
+      gitLink: "https://github.com/Selani00/My-Portfolio",
+      demo: "https://selani00.github.io/My-Portfolio/",
+    },
+    
     {
       title: "Travel Companion",
       discription: "Mobile Application using Flutter and Firebase",
