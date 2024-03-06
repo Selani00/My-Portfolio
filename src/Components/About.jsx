@@ -57,7 +57,7 @@ const About = () => {
                   computer engineering.
                 </p>
                 
-                  <a href="./src/assets/Selani_Didulani_CV.pdf" download>
+                  <a href="../assets/Selani_Didulani_CV.pdf" download>
                     <button className="btn-primary mt-10 ">Download CV</button>
                   </a>
                 
