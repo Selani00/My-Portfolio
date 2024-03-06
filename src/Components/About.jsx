@@ -20,7 +20,7 @@ const About = () => {
           My Introduction
         </p>
         <div className=" flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
-          <div className="flex-1  flex justify-center items-center">
+          <div className="flex-1   justify-center items-center md:block hidden">
             <div className="lg:w-96 h-full relative sm:w-10/11 w-11/12 max-w-sm">
               <img src={about} alt="" className="w-full rounded-lg" />
             </div>
@@ -57,7 +57,7 @@ const About = () => {
                   computer engineering.
                 </p>
                 
-                  <a href="./src/assets/Selani_Didulani_CV.pdf" download>
+                  <a href="./src/assets/Selani_Didulani_CV.pdf" download={true}>
                     <button className="btn-primary mt-10 ">Download CV</button>
                   </a>
                 
