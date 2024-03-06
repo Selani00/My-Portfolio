@@ -59,10 +59,10 @@ const Hero = ({ setSelectedPage }) => {
             </span>
           </h1>
 
-          <p className="mt-10 mb-7 md:text-lg text-sm text-center md:text-start">
+          <p className="mt-10 mb-7 md:text-lg text-base text-center md:text-start">
             I'm a Computer Engineering undegraduate who welcome challenges and
             architect solutions.I'm passionate about full-stack development ,
-            mobile application development and UI/UX design. I'm also a fast
+            mobile application development and UI/UX design. Also, I'm a fast
             learner and a team player who is always eager to learn new
             technologies and work with new people.
           </p>
