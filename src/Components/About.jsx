@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import about from "../assets/About.jpg";
 
+import cv from "../assets/Selani_Didulani_CV.pdf";
+
 import UOR from "../assets/Educations/UOR.png";
 import IHRA from "../assets/Educations/IHRA.png";
 import Devi from "../assets/Educations/Devi.png";
@@ -57,7 +59,7 @@ const About = () => {
                   computer engineering.
                 </p>
                 
-                  <a href="./src/assets/Selani_Didulani_CV.pdf" download={true}>
+                  <a href={cv} download="Selani Didulani CV">
                     <button className="btn-primary mt-10 ">Download CV</button>
                   </a>
                 
