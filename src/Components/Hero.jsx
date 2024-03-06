@@ -5,7 +5,6 @@ import Profile from "../assets/Profile_1.png";
 
 import SociaMediaIcons from "../Items/SocialMediaIcons";
 
-
 const Hero = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
@@ -52,22 +51,26 @@ const Hero = ({ setSelectedPage }) => {
           }}
         >
           <h1 className="md:text-4xl text-2xl z-10 text-center md:text-left font-semibold">
-            Hi, It's me <br />
+            Hi, I'm <br />
           </h1>
-          <h1 className="md:text-5xl text-4xl font-bold text-center sm:text-start">
-            Selani {""}
+          <h1 className="md:text-6xl text-4xl font-bold text-center sm:text-start">
             <span className="xs:relative text-red  xs:font-semibold z-20">
-              Didulani
+              Selani Didulani
             </span>
           </h1>
 
-          <p className="mt-10 mb-7 md:text-base text-sm text-center md:text-start">
-            I'm Computer Engineering undergraduate who is interested in
-            front-end development, mobile app development, and UI/UX design.
+          <p className="mt-10 mb-7 md:text-lg text-sm text-center md:text-start">
+            I'm a Computer Engineer undegraduate who welcomes challenges and
+            architects solutions.I'm passionate about full-stack development ,
+            mobile application development and UI/UX design. I'm also a fast
+            learner and a team player who is always eager to learn new
+            technologies and work with new people.
           </p>
 
           <a href="#contact">
-            <button className=" text-lg font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center gap-2 transition-all duration-300 bg-red hover:-translate-y-2 mt-10 ">Contact me</button>
+            <button className=" text-xl font-semibold text-white md:mx-0 mx-auto rounded-full py-2 px-6 flex items-center gap-2 transition-all duration-300 bg-red hover:-translate-y-2 mt-10 ">
+              Contact me
+            </button>
           </a>
         </motion.div>
 

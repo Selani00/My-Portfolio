@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import about from "../assets/person_3.jpg";
+import about from "../assets/About.jpg";
 
 import UOR from "../assets/Educations/UOR.png";
 import IHRA from "../assets/Educations/IHRA.png";
@@ -9,8 +9,6 @@ import DVP from "../assets/Educations/DVP.png";
 // import { Carousel } from 'flowbite-react';
 
 const About = () => {
-
-
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
@@ -18,13 +16,15 @@ const About = () => {
           About <span className="text-cyan-600">Me</span>
         </h3>
 
-        <p className="text-gray-200 my-3 md:text-xl text-base tracking-wide font-bold mb-10">My introduction</p>
+        <p className="text-gray-200 my-3 md:text-xl text-base tracking-wide font-bold mb-10">
+          My Introduction
+        </p>
         <div className=" flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
-          {/* <div className="flex-1  flex justify-center items-center">
+          <div className="flex-1  flex justify-center items-center">
             <div className="lg:w-96 h-full relative sm:w-10/11 w-11/12 max-w-sm">
               <img src={about} alt="" className="w-full rounded-lg" />
             </div>
-          </div> */}
+          </div>
 
           <div className="p-2">
             <div className="text-gray-300 my-3">
@@ -39,27 +39,42 @@ const About = () => {
                 }}
               >
                 <p className="text-justify leading-7 w-11/12">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Animi, tempore. Blanditiis a magnam eligendi, aspernatur totam
-                  atque rerum laudantium explicabo sequi eveniet dolorem amet
-                  quaerat tempore, eos aliquam deleniti sit?
+                  Hello, I'm Selani a third year Computer Engineering
+                  undergraduate at Faculty of Engineering, University of Ruhuna.
+                  In my university life,I have been able to gain a lot of
+                  knowledge and experience in the field of computer engineering.
+                  I have worked on diverse project related web development,
+                  mobile application development, desktop application
+                  developmnet also machine learning base project. Also have
+                  experience on UI/UX design, Agile methodology and Scrum.
+                  <br />
+                  <br />
+                  Beyond academics, I've actively participated in competitions
+                  and served as a committee member, honing my collaborative and
+                  leadership skills. This introduction encapsulates my passion
+                  for innovation, continuous learning, and my commitment to
+                  pushing the boundaries of what can be achieved in the realm of
+                  computer engineering.
                 </p>
-
-                <a href="./src/assets/Selani_Didulani_CV.pdf" download>
-                  <button className="btn-primary mt-10 ">Download CV</button>
-                </a>
+                
+                  <a href="./src/assets/Selani_Didulani_CV.pdf" download>
+                    <button className="btn-primary mt-10 ">Download CV</button>
+                  </a>
+                
               </motion.div>
             </div>
           </div>
         </div>
 
-        <p className="text-gray-200 md:mt-3 mt-10  md:text-xl text-base tracking-wide font-bold" >My Educations</p>
+        <p className="text-gray-200 md:mt-3 pt-20  md:text-xl text-base tracking-wide font-bold">
+          My Educations
+        </p>
         <div className="flex flex-col justify-center sm:py-12">
           <div className="w-full py-3 px-2 sm:max-w-xl sm:mx-auto sm:px-0">
             <div className="relative text-gray-700 antialiased text-sm font-semibold">
               {/* Middle line */}
               <motion.div>
-              <div className="hidden absolute w-1 sm:block bg-white h-full left-1/2 transform -translate-x-1/2"></div>
+                <div className="hidden absolute w-1 sm:block bg-white h-full left-1/2 transform -translate-x-1/2"></div>
               </motion.div>
               {/* left cards */}
 
@@ -72,7 +87,6 @@ const About = () => {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.8 }}
-                        
                         variants={{
                           hidden: { opacity: 0, x: 50 },
                           visible: { opacity: 1, x: 0 },
@@ -231,8 +245,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   );

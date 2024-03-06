@@ -45,15 +45,15 @@ const Contact = () => {
         <h3 className="md:text-4xl text-3xl">
           Contact <span className=" text-cyan-600">Me</span>
         </h3>
-        <p className="text-gray-400 mt-3 taxt-lg">Get in touch</p>
+        <p className="text-gray-200 my-3 md:text-xl text-base tracking-wide font-bold mb-10">Get in touch</p>
       </div>
       
 
       <div className="mt-16 flex md:flex-row flex-col gap-6 md:p-6 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto">
         <form className="flex flex-col flex-1 gap-5" ref={form} onSubmit={sendEmail}>
-          <input type="text" placeholder="Your name" name="user_name"></input>
-          <input type="Email" placeholder="Your email Address" name="user_email"></input>
-          <textarea placeholder="Your Message" rows={10} name="message"></textarea>
+          <input type="text" placeholder="Your name" id="name" required></input>
+          <input type="email" placeholder="Your email Address" id="email" required></input>
+          <textarea type="text" placeholder="Your Message" rows={10} id="message" required></textarea>
           <button className="btn-primary w-fit" type="submit" value="Send">Send Message</button>
         </form>
         <div className="flex flex-col gap-7">
@@ -69,6 +69,13 @@ const Contact = () => {
           ))}
         </div>
       </div>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+       function SendEmail() {
+        
+        
+       }
+      </script>
     </section>
   );
 };
