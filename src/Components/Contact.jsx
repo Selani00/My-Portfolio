@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import { BiSolidMessageRoundedDetail } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiWhatsappFill } from "react-icons/ri";
+import { ToastContainer,toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
 
@@ -12,12 +14,15 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_fpq3fxi', 'template_utt58ni', form.current, {
+      .sendForm('service_ubq9s3s', 'template_utt58ni', form.current, {
         publicKey: 'SWWu3tOpP7CkfJisF',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+
+          
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -51,9 +56,9 @@ const Contact = () => {
 
       <div className="mt-16 flex md:flex-row flex-col gap-6 md:p-6 max-w-5xl bg-gray-800 p-6 rounded-lg mx-auto">
         <form className="flex flex-col flex-1 gap-5" ref={form} onSubmit={sendEmail}>
-          <input type="text" placeholder="Your name" id="name" required></input>
-          <input type="email" placeholder="Your email Address" id="email" required></input>
-          <textarea type="text" placeholder="Your Message" rows={10} id="message" required></textarea>
+          <input type="text" placeholder="Your name" name="from_name" required></input>
+          <input type="email" placeholder="Your email Address" name="from_email" required></input>
+          <textarea type="text" placeholder="Your Message" rows={10} name="message" required></textarea>
           <button className="btn-primary w-fit" type="submit" value="Send">Send Message</button>
         </form>
         <div className="flex flex-col gap-7">
@@ -69,13 +74,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-       function SendEmail() {
-        
-        
-       }
-      </script>
+      
     </section>
   );
 };
