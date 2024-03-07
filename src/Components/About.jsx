@@ -28,7 +28,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="p-2">
+          <div className="p-2 ">
             <div className="text-gray-300 my-3">
               <motion.div
                 initial="hidden"
@@ -40,7 +40,7 @@ const About = () => {
                   visible: { opacity: 1, x: 0 },
                 }}
               >
-                <p className="text-justify leading-7 w-11/12">
+                <p className="text-justify leading-7 w-full md:w-11/12">
                   Hello, I'm Selani a third year Computer Engineering
                   undergraduate at Faculty of Engineering, University of Ruhuna.
                   In my university life,I have been able to gain a lot of
