@@ -16,14 +16,14 @@ const Project = () => {
   const ProjectList = [
     {
       title: "Spam Email Detecter",
-      discription: "Web Application using Flask and Machine Learning",
+      discription: "Web Application using Flask and Machine Learning Algorithms. Use Naive bayers and Logistic regresstion algorithms to train and test the model.",
       image: Spam,
       gitLink: "https://github.com/Selani00/Spam-Email-Detection-ML",
       demo: "https://email-spam-detector-jyr7.onrender.com/",
     },
     {
       title: "Portfolio Website",
-      discription: "My Portfolio Website using React and Tailwind CSS",
+      discription: "My Portfolio Website using React and Tailwind CSS. ",
       image: Portfolio,
       gitLink: "https://github.com/Selani00/My-Portfolio",
       demo: "https://selani00.github.io/My-Portfolio/",
@@ -31,28 +31,28 @@ const Project = () => {
     
     {
       title: "Travel Companion",
-      discription: "Mobile Application using Flutter and Firebase",
+      discription: "Mobile Application using Flutter and Firebase. Authentication and CRUD operations. Can search current location on map and can get current weather.",
       image: mobile,
       gitLink: "https://github.com/Selani00/Travel_Companion_s",
       demo: "https://www.linkedin.com/posts/selani-didulani_flutter-firebase-mvc-activity-7154882139463864320-sc8P?utm_source=share&utm_medium=member_desktop",
     },
     {
       title: "Document Management System",
-      discription: "Web Application using ASP.Net and SQL Server",
+      discription: "Web Application using ASP.Net and SQL Server. Can do CRUD operations and Search operation for documents.",
       image: DocMs,
       gitLink: "https://github.com/Selani00/Document-Management-System",
       demo: "https://www.linkedin.com/posts/selani-didulani_reactjs-aspdotnet-sqlserver-activity-7136624080148971521-0S5P?utm_source=share&utm_medium=member_desktop",
     },
     {
       title: "Patient Registration System",
-      discription: "Desktop Application using WPF and Sqlite",
+      discription: "Desktop Application using WPF and Sqlite. Authentication with two roles. CRUD operation for both roles.",
       image: PRS,
       gitLink: "https://www.linkedin.com/posts/selani-didulani_wpf-mvvm-sqlite-activity-7089518674738352129-oCfL?utm_source=share&utm_medium=member_desktop",
       demo: "https://www.linkedin.com/posts/selani-didulani_wpf-mvvm-sqlite-activity-7089518674738352129-oCfL?utm_source=share&utm_medium=member_desktop",
     },
     {
       title: "Resturant Website",
-      discription: "WebApplication using HTML and CSS",
+      discription: "WebApplication using HTML and CSS. Fully responsive can navigate through the website.",
       image: Alison,
       gitLink: "https://github.com/Selani00/Alison_Course_HTML-CSS",
       demo: "https://www.linkedin.com/posts/selani-didulani_html-css-frontend-activity-7134380396812652544-6jE7?utm_source=share&utm_medium=member_desktop",
