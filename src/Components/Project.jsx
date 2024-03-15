@@ -67,8 +67,8 @@ const Project = () => {
         <p className="text-gray-200 mt-3 md:text-xl text-base tracking-wide font-bold mb-7">My awesome works</p>
       </div>
       <br />
-      <div className="flex md:flex-col-3  mx-auto items-center relative ">
-        <Swiper
+      <div className="px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto items-center group">
+        {/* <Swiper
           breakpoints={{
             340: {
               slidesPerView: 1,
@@ -86,10 +86,10 @@ const Project = () => {
           }}
           modules={[FreeMode, Pagination]}
           className="max-w-[100%] lg:max-w-[80%] "
-        >
+        > */}
           {ProjectList.map((item, i) => (
-            <SwiperSlide key={i}>
-              <div className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10 ">
+            // <SwiperSlide key={i}>
+              <d key={i} className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10  group-hover:blur-sm hover:!blur-none">
                 <img src={item.image} alt="" className="rounded-lg w-full h-40 object-cover" />
                 <h3 className="text-xl my-4 font-bold">{item.title}</h3>
                 <h3 className="text-base my-4">{item.discription}</h3>
@@ -107,10 +107,10 @@ const Project = () => {
                     Demo
                   </a>
                 </div>
-              </div>
-            </SwiperSlide>
+              </d>
+            // </SwiperSlide>
           ))}
-        </Swiper>
+        {/* </Swiper> */}
       </div>
     </section>
   );
@@ -118,23 +118,4 @@ const Project = () => {
 
 export default Project;
 
-{
-  /* <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                <img src={project1} alt="" className="rounded-lg" />
-                <h3 className="text-xl my-4">Movie appp</h3>
-                <div className="flex gap-3">
-                  <a
-                    href=""
-                    className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                  >
-                    Github
-                  </a>
-                  <a
-                    href=""
-                    className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
-                  >
-                    Demo
-                  </a>
-                </div>
-              </div> */
-}
+
