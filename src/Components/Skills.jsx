@@ -5,8 +5,8 @@ import java from "../assets/Languages_icons/java.png"
 import javascript from "../assets/Languages_icons/js.png"
 import cc from "../assets/Languages_icons/c-sharp.png"
 import python from "../assets/Languages_icons/python.png"
-import HTML from "../assets/Languages_icons/html-5.png"
-import CSS from "../assets/Languages_icons/css-3.png"
+import NextJs from "../assets/Languages_icons/nextjs1.jpg";
+import TypeScript from "../assets/Languages_icons/typescript.png";
 
 import react from "../assets/Languages_icons/React.png";
 import asp from "../assets/Languages_icons/www.png";
@@ -53,6 +53,11 @@ const Skills = () => {
       name: "Java",
     },
     {
+      logo: TypeScript,
+      name: "TypeScript",
+    },
+    
+    {
       logo: javascript,
       name: "JavaScript",
     },
@@ -75,6 +80,10 @@ const Skills = () => {
     {
       logo: asp,
       name: "ASP.NET",
+    },
+    {
+      logo: NextJs,
+      name: "NextJs",
     },
     {
       logo: tailwind,
