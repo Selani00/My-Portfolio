@@ -7,6 +7,7 @@ import mobile from "../assets/Project_images/Mobile.png";
 import PRS from "../assets/Project_images/PRS.png";
 import Spam from "../assets/Project_images/Spam.png";
 import Portfolio from "../assets/Project_images/Portfolio.png"
+import Chatbot from "../assets/Project_images/ChatBot.png"
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,6 +15,13 @@ import "swiper/css/pagination";
 
 const Project = () => {
   const ProjectList = [
+    {
+      title: "ChatBot",
+      discription: "Web Application using OpenAI, GPT 3.5 , ReactJs, NodeJs and Tailwind CSS. Can chat with the bot and get the answers for the questions.",
+      image: Chatbot,
+      gitLink: "https://github.com/Selani00/Chatbot-Frontend",
+      demo: "https://www.linkedin.com/posts/selani-didulani_reactjs-nodejs-express-activity-7181594890475126784-APPx?utm_source=share&utm_medium=member_desktop",
+    },
     {
       title: "Spam Email Detecter",
       discription: "Web Application using Flask and Machine Learning Algorithms. Use Naive bayers and Logistic regresstion algorithms to train and test the model.",
