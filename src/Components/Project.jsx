@@ -8,6 +8,7 @@ import PRS from "../assets/Project_images/PRS.png";
 import Spam from "../assets/Project_images/Spam.png";
 import Portfolio from "../assets/Project_images/Portfolio.png"
 import Chatbot from "../assets/Project_images/ChatBot.png"
+import Hangman from "../assets/Project_images/Hangman.png"
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,6 +16,13 @@ import "swiper/css/pagination";
 
 const Project = () => {
   const ProjectList = [
+    {
+      title: "Hangman Game",
+      discription: "A Web Application for Hangman Game. It was built using React, TypeScript and Tailwind CSS",
+      image: Hangman,
+      gitLink: "https://github.com/Selani00/hangman_game",
+      demo: "https://www.linkedin.com/posts/selani-didulani_react-typescript-codingfun-activity-7185313125129154561-nIr5?utm_source=share&utm_medium=member_desktop",
+    },
     {
       title: "ChatBot",
       discription: "Web Application using OpenAI, GPT 3.5 , ReactJs, NodeJs and Tailwind CSS. Can chat with the bot and get the answers for the questions.",
