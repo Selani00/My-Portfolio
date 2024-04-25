@@ -9,6 +9,7 @@ import Spam from "../assets/Project_images/Spam.png";
 import Portfolio from "../assets/Project_images/Portfolio.png"
 import Chatbot from "../assets/Project_images/ChatBot.png"
 import Hangman from "../assets/Project_images/Hangman.png"
+import Movie from "../assets/Project_images/MovieApp.png"
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,6 +17,13 @@ import "swiper/css/pagination";
 
 const Project = () => {
   const ProjectList = [
+    {
+      title: "Movie Web Application",
+      discription: "A Web Application for find Movie Details. It was built using NextJs, Tailwind CSS and TMDB API",
+      image: Movie,
+      gitLink: "https://github.com/Selani00/Movie-App",
+      demo: "https://github.com/Selani00/Movie-App",
+    },
     {
       title: "Hangman Game",
       discription: "A Web Application for Hangman Game. It was built using React, TypeScript and Tailwind CSS",
@@ -105,20 +113,20 @@ const Project = () => {
         > */}
           {ProjectList.map((item, i) => (
             // <SwiperSlide key={i}>
-              <d key={i} className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10  group-hover:blur-sm hover:!blur-none">
+              <d key={i} className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10  group-hover:blur-xs hover:!blur-none">
                 <img src={item.image} alt="" className="rounded-lg w-full h-40 object-cover" />
                 <h3 className="text-xl my-4 font-bold">{item.title}</h3>
                 <h3 className="text-base my-4">{item.discription}</h3>
                 <div className="flex gap-3">
                   <a
                     href={item.gitLink}
-                    className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                    className="text-cyan-600 hover:text-amber-500 bg-gray-800 px-2 py-1 inline-block cursor-pointer"
                   >
                     GitLink
                   </a>
                   <a
                     href={item.demo}
-                    className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
+                    className="text-cyan-600 hover:text-amber-500 bg-gray-800 px-2 py-1 inline-block cursor-pointer"
                   >
                     Demo
                   </a>
