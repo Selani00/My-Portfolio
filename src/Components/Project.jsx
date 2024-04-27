@@ -19,10 +19,10 @@ const Project = () => {
   const ProjectList = [
     {
       title: "Movie Web Application",
-      discription: "A Web Application for find Movie Details. It was built using NextJs, Tailwind CSS and TMDB API",
+      discription: "A Web Application for find Movie Details. It was built using NextJs, Tailwind CSS with TMDB API",
       image: Movie,
       gitLink: "https://github.com/Selani00/Movie-App",
-      demo: "https://github.com/Selani00/Movie-App",
+      demo: "https://www.linkedin.com/posts/selani-didulani_nextjs-api-tailwindcss-activity-7189684534890696704-5pvO?utm_source=share&utm_medium=member_desktop",
     },
     {
       title: "Hangman Game",
