@@ -61,8 +61,8 @@ const Hero = ({ setSelectedPage }) => {
 
           <p className="mt-10 mb-7 md:text-lg text-base text-center md:text-start">
             I'm a Computer Engineering undegraduate who welcome challenges and
-            architect solutions.I'm passionate about full-stack development ,
-            mobile application development and UI/UX design. Also, I'm a fast
+            architect solutions.I'm passionate about Web Application development , Front end development ,
+            mobile application development , Machina Learning projects and UI/UX design. Also, I'm a fast
             learner and a team player who is always eager to learn new
             technologies and work with new people.
           </p>

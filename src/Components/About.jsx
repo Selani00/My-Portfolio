@@ -48,7 +48,7 @@ const About = () => {
                   I have worked on diverse project related web development,
                   mobile application development, desktop application
                   developmnet also machine learning base project. Also have
-                  experience on UI/UX design, Agile methodology and Scrum.
+                  experience on UI/UX design using figma, Project Managment using Jira and Version control using Git/GitHub.
                   <br />
                   <br />
                   Beyond academics, I've actively participated in competitions
